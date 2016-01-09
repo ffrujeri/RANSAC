@@ -45,21 +45,22 @@ int main(int argc, char* argv[]) {
     std::mt19937 RNG = std::mt19937(seedDevice());
 
     std::uniform_int_distribution<int> uniDist(0, side-1);
-    int perturb = 25;
+
+    int perturb = 50;
     std::normal_distribution<RANSAC::VPFloat> perturbDist(0, perturb);
 
     std::vector<std::shared_ptr<RANSAC::Parameter> > candPoints;
 
     for (int i = 0; i < nPoints; i++) {
         int diag = uniDist(RNG);
-        cv::Point pt((int) floor(diag + perturbDist(RNG)), (int) floor(diag + perturbDist(RNG)));
-        cv::circle(canvas, pt, int(floor(side / 100)), cv::Scalar(0, 0, 0), -1);
+        cv::Point pt((int) floor(side - diag + perturbDist(RNG)), (int) floor(diag + perturbDist(RNG)));
+        cv::circle(canvas, pt, int(floor(side / 200)), cv::Scalar(0, 0, 255), -1);
 
         std::shared_ptr<RANSAC::Parameter> candPt = std::make_shared<Point2D>(pt.x, pt.y);
         candPoints.push_back(candPt);
     }
 
-    RANSAC::Ransac<Line2DModel, 2> estimator;
+    RANSAC::Estimator<Line2DModel, 2> estimator;
     estimator.initialize(20,100);
     int start = cv::getTickCount();
     estimator.estimate(candPoints);
@@ -71,7 +72,7 @@ int main(int argc, char* argv[]) {
         for (auto& inlier : bestInliers) {
             auto rPt = std::dynamic_pointer_cast<Point2D>(inlier);
             cv::Point pt((int)floor(rPt->point2D[0]), (int) floor(rPt->point2D[1]));
-            cv::circle(canvas, pt, int(floor(side/100)), cv::Scalar(0, 255, 0), -1);
+            cv::circle(canvas, pt, int(floor(side/200)), cv::Scalar(0, 255, 0), -1);
         }
 
         auto bestLine = estimator.getBestModel();
@@ -81,7 +82,7 @@ int main(int argc, char* argv[]) {
             if (bestLinePt1 && bestLinePt2) {
                 cv::Point pt1((int)bestLinePt1->point2D[0], (int)bestLinePt1->point2D[1]);
                 cv::Point pt2((int)bestLinePt2->point2D[0], (int)bestLinePt2->point2D[1]);
-                DrawFullLine(canvas, pt1, pt2, cv::Scalar(0,0,255), 2);
+                DrawFullLine(canvas, pt1, pt2, cv::Scalar(0,0,0), 2);
             }
         }
         while(true) {

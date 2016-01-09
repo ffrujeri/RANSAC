@@ -47,10 +47,10 @@ RM = /usr/local/Cellar/cmake/3.2.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/felipefrujeri/ClionProjects/RANSAC
+CMAKE_SOURCE_DIR = /Users/felipefrujeri/Desktop/RANSAC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/felipefrujeri/ClionProjects/RANSAC/build
+CMAKE_BINARY_DIR = /Users/felipefrujeri/Desktop/RANSAC/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/RANSAC.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/felipefrujeri/ClionProjects/RANSAC/build
 CMakeFiles/RANSAC.dir/all:
 	$(MAKE) -f CMakeFiles/RANSAC.dir/build.make CMakeFiles/RANSAC.dir/depend
 	$(MAKE) -f CMakeFiles/RANSAC.dir/build.make CMakeFiles/RANSAC.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/felipefrujeri/ClionProjects/RANSAC/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/felipefrujeri/Desktop/RANSAC/build/CMakeFiles  1
 	@echo "Built target RANSAC"
 .PHONY : CMakeFiles/RANSAC.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/RANSAC.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RANSAC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/felipefrujeri/ClionProjects/RANSAC/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/felipefrujeri/Desktop/RANSAC/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/RANSAC.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/felipefrujeri/ClionProjects/RANSAC/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/felipefrujeri/Desktop/RANSAC/build/CMakeFiles 0
 .PHONY : CMakeFiles/RANSAC.dir/rule
 
 # Convenience name for target.

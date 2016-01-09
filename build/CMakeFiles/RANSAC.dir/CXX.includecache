@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/felipefrujeri/ClionProjects/RANSAC/LineModel.h
+/Users/felipefrujeri/Desktop/RANSAC/LineModel.h
 cmath
 -
 memory
 -
 include/Model.h
-/Users/felipefrujeri/ClionProjects/RANSAC/include/Model.h
+/Users/felipefrujeri/Desktop/RANSAC/include/Model.h
 
-/Users/felipefrujeri/ClionProjects/RANSAC/include/Model.h
+/Users/felipefrujeri/Desktop/RANSAC/include/Model.h
 vector
 -
 array
@@ -22,7 +22,7 @@ array
 memory
 -
 
-/Users/felipefrujeri/ClionProjects/RANSAC/include/Ransac.h
+/Users/felipefrujeri/Desktop/RANSAC/include/Ransac.h
 iostream
 -
 cmath
@@ -38,9 +38,9 @@ vector
 memory
 -
 Model.h
-/Users/felipefrujeri/ClionProjects/RANSAC/include/Model.h
+/Users/felipefrujeri/Desktop/RANSAC/include/Model.h
 
-/Users/felipefrujeri/ClionProjects/RANSAC/main.cpp
+/Users/felipefrujeri/Desktop/RANSAC/main.cpp
 iostream
 -
 opencv2/core/core.hpp
@@ -54,9 +54,9 @@ cmath
 random
 -
 include/Ransac.h
-/Users/felipefrujeri/ClionProjects/RANSAC/include/Ransac.h
+/Users/felipefrujeri/Desktop/RANSAC/include/Ransac.h
 LineModel.h
-/Users/felipefrujeri/ClionProjects/RANSAC/LineModel.h
+/Users/felipefrujeri/Desktop/RANSAC/LineModel.h
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

@@ -35,10 +35,10 @@ RM = /usr/local/Cellar/cmake/3.2.1/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/felipefrujeri/ClionProjects/RANSAC
+CMAKE_SOURCE_DIR = /Users/felipefrujeri/Desktop/RANSAC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/felipefrujeri/ClionProjects/RANSAC/build
+CMAKE_BINARY_DIR = /Users/felipefrujeri/Desktop/RANSAC/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RANSAC.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/RANSAC.dir/flags.make
 
 CMakeFiles/RANSAC.dir/main.cpp.o: CMakeFiles/RANSAC.dir/flags.make
 CMakeFiles/RANSAC.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/felipefrujeri/ClionProjects/RANSAC/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/felipefrujeri/Desktop/RANSAC/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/RANSAC.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/RANSAC.dir/main.cpp.o -c /Users/felipefrujeri/ClionProjects/RANSAC/main.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/RANSAC.dir/main.cpp.o -c /Users/felipefrujeri/Desktop/RANSAC/main.cpp
 
 CMakeFiles/RANSAC.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RANSAC.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/felipefrujeri/ClionProjects/RANSAC/main.cpp > CMakeFiles/RANSAC.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/felipefrujeri/Desktop/RANSAC/main.cpp > CMakeFiles/RANSAC.dir/main.cpp.i
 
 CMakeFiles/RANSAC.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RANSAC.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/felipefrujeri/ClionProjects/RANSAC/main.cpp -o CMakeFiles/RANSAC.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/felipefrujeri/Desktop/RANSAC/main.cpp -o CMakeFiles/RANSAC.dir/main.cpp.s
 
 CMakeFiles/RANSAC.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/RANSAC.dir/main.cpp.o.requires
@@ -125,6 +125,6 @@ CMakeFiles/RANSAC.dir/clean:
 .PHONY : CMakeFiles/RANSAC.dir/clean
 
 CMakeFiles/RANSAC.dir/depend:
-	cd /Users/felipefrujeri/ClionProjects/RANSAC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/felipefrujeri/ClionProjects/RANSAC /Users/felipefrujeri/ClionProjects/RANSAC /Users/felipefrujeri/ClionProjects/RANSAC/build /Users/felipefrujeri/ClionProjects/RANSAC/build /Users/felipefrujeri/ClionProjects/RANSAC/build/CMakeFiles/RANSAC.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/felipefrujeri/Desktop/RANSAC/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/felipefrujeri/Desktop/RANSAC /Users/felipefrujeri/Desktop/RANSAC /Users/felipefrujeri/Desktop/RANSAC/build /Users/felipefrujeri/Desktop/RANSAC/build /Users/felipefrujeri/Desktop/RANSAC/build/CMakeFiles/RANSAC.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RANSAC.dir/depend
 

@@ -2,8 +2,8 @@
 // Created by Felipe Vieira Frujeri on 29/12/15.
 //
 
-#ifndef RANSAC_RANSAC_H
-#define RANSAC_RANSAC_H
+#ifndef RANSAC_ESTIMATOR_H
+#define RANSAC_ESTIMATOR_H
 
 #include <iostream>
 #include <cmath>
@@ -17,7 +17,7 @@
 
 namespace RANSAC {
     template <class T, int modelSize>
-    class Ransac {
+    class Estimator {
     private:
         std::vector<std::shared_ptr<Parameter> > data;
 
@@ -100,4 +100,4 @@ namespace RANSAC {
         }
     };
 }
-#endif //RANSAC_RANSAC_H
+#endif //RANSAC_ESTIMATOR_H

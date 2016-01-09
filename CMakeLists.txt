@@ -14,10 +14,10 @@ ENDIF()
 
 FIND_PACKAGE(OpenCV REQUIRED)
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/../include ${OpenCV_INCLUDE_DIRS})
-project(RANSAC)
+PROJECT(RANSAC)
 
 SET(CPP_FILES main.cpp)
-set(SOURCE_FILES main.cpp include/Model.h include/Ransac.h include/Ransac.h LineModel.h)
+SET(HPP_FILES include/Model.h include/Ransac.h include/Ransac.h LineModel.h)
 SET(VC_LIBS ${OpenCV_LIBS})
 
 ADD_EXECUTABLE(${PROJECT_NAME} ${CPP_FILES} ${HPP_FILES})
